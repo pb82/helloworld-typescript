@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Hello World</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- Page instructions -->
+  <h5>
+    Press the button below to say hello to the cloud.
+  </h5>
+  <!-- End: Page instructions -->
+
+  <!-- Text to be sent to the hello endpoint -->
+  <ion-item>
+    <ion-label color="primary" floating>Your name</ion-label>
+    <ion-input type="string" [(ngModel)]="inputText"></ion-input>
+  </ion-item>
+  <!-- End: Text to be sent to the hello endpoint -->
+
+  <div class="divider"></div>
+
+  <!-- Invoke cloud call to hello world endpoint -->
+  <div id="hello-world-invoke-button-wrapper" class="centered">
+    <button ion-button round outline id="hello-world-invoke-button" (click)="invokeCloudCall()">
+      Press me
+    </button>
+  </div>
+  <!-- End: Invoke cloud call to hello world endpoint -->
+
+  <div class="divider"></div>
+  <div class="divider"></div>
+
+  <!-- Response label -->
+  <ion-label class="header">Response from cloud</ion-label>
+  <ion-textarea disabled="true" [value]="labelText"></ion-textarea>
+  <!-- End: Response label -->
+</ion-content>

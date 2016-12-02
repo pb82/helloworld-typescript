@@ -1,0 +1,49 @@
+{
+  "name": "helloworld-typescript",
+  "homepage": "http://feedhenry.org/",
+  "private": true,
+  "scripts": {
+    "ionic:build": "ionic-app-scripts build --copy ./config/copy.config.js",
+    "ionic:serve": "ionic-app-scripts serve --copy ./config/copy.config.js"
+  },
+  "dependencies": {
+    "@angular/common": "2.1.1",
+    "@angular/compiler": "2.1.1",
+    "@angular/compiler-cli": "2.1.1",
+    "@angular/core": "2.1.1",
+    "@angular/forms": "2.1.1",
+    "@angular/http": "2.1.1",
+    "@angular/platform-browser": "2.1.1",
+    "@angular/platform-browser-dynamic": "2.1.1",
+    "@angular/platform-server": "2.1.1",
+    "@ionic/storage": "1.1.6",
+    "ionic-angular": "2.0.0-rc.3",
+    "ionic-native": "2.2.3",
+    "ionicons": "3.0.0",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.26",
+    "@akeating-redhat/fh-js-sdk": "2.18.1"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "0.0.45",
+    "tslint-eslint-rules": "^3.1.0",
+    "typescript": "2.0.6"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ],
+  "description": "helloworld-typescript: An Ionic 2 project using TypeScript for communicating with RHMAP."
+}
