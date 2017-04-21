@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import * as FeedHenry from '@akeating-redhat/fh-js-sdk';
+import * as FeedHenry from 'fh-js-sdk';
 
 
 @Component({
